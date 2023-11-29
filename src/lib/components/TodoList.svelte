@@ -18,12 +18,7 @@
     <li>
       <h2>{title}</h2>
       <p>{description}</p>
-      <input
-        type="checkbox"
-        bind:checked={done}
-        bind:value={done}
-        on:change={() => handleCheckbox({ id })}
-      />
+      <input type="checkbox" bind:checked={done} on:click={() => handleCheckbox({ id })} />
       <button on:click={() => handleDelete({ id })}>delete</button>
     </li>
   {/each}

@@ -11,9 +11,6 @@
 
 <style>
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    @apply flex justify-center items-center gap-4;
   }
 </style>

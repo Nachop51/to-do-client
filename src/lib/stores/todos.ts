@@ -76,17 +76,9 @@ export const updateTodo = ({ id, input }: { id: TodoId; input: TodoUpdate }) => 
 }
 
 export const toggleTodo = ({ id }: { id: TodoId }) => {
-  todos.update((prevTodos) => {
-    const newTodos = prevTodos.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, done: !todo.done }
-      }
-
-      return todo
-    })
-
-    return newTodos
-  })
+  todos.update((prevTodos) =>
+    prevTodos.map((todo) => (todo.id === id ? { ...todo, done: !todo.done } : todo))
+  )
 }
 
 export const removeTodo = ({ id }: { id: TodoId }) => {
