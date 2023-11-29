@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border p-0 m-0;
+}
+
+:root {
+  color-scheme: dark light;
+
+  --color-primary: #f3c614;
+  --color-secondary: #5ca4a9;
+}
+
+body {
+  @apply min-h-screen;
+}
