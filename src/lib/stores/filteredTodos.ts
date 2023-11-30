@@ -9,7 +9,7 @@ export const filteredTodos = derived([todos, filter], ([$todos, $filter]) => {
       return $todos
     case TODO_FILTERS.DONE:
       return $todos.filter((todo) => todo.done)
-    case TODO_FILTERS.NOT_DONE:
+    case TODO_FILTERS.PENDING:
       return $todos.filter((todo) => !todo.done)
     default:
       return $todos

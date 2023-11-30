@@ -9,6 +9,6 @@
 <style>
   main {
     max-width: 1000px;
-    @apply mx-auto h-full flex flex-col place-items-center;
+    @apply h-full w-full flex flex-col items-center gap-4 p-8;
   }
 </style>
