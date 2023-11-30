@@ -15,7 +15,7 @@
   }
 </script>
 
-<div class="text-2xl font-semibold text-center">
+<div class="text-3xl font-semibold text-center">
   {#if todos.length === 0 && $filter === TODO_FILTERS.ALL}
     <h2>You have no todos yet, add one!</h2>
   {:else if todos.length === 0 && $filter === TODO_FILTERS.DONE}
@@ -39,7 +39,9 @@
         <h3 class="card-title">{title}</h3>
         <p>{description}</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-outline" on:click={() => handleDelete({ id })}> Discard </button>
+          <button class="btn btn-error btn-outline" on:click={() => handleDelete({ id })}>
+            Discard
+          </button>
           <button class="btn flex items-center" on:click={() => handleCheckbox({ id })}>
             Complete
             <input class="checkbox checkbox-accent" type="checkbox" bind:checked={done} />
