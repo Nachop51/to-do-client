@@ -32,7 +32,7 @@
     {/if}
   {/if}
 </div>
-<ul class="flex gap-4 flex-wrap">
+<ul class="flex gap-4 flex-wrap justify-center">
   {#each todos as { id, title, description, done }}
     <li class="card w-96 bg-base-100 shadow-xl border-2 border-base-200">
       <div class="card-body">
