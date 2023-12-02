@@ -18,3 +18,7 @@
 body {
   @apply min-h-screen flex flex-col justify-start items-center;
 }
+
+.all-screen {
+  @apply fixed top-0 left-0 w-full h-full;
+}
