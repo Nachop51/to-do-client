@@ -16,7 +16,10 @@
   }
 </script>
 
-<li class="card w-96 bg-base-100 shadow-xl border-2 border-base-200 flex flex-col gap-2">
+<li
+  class="card w-96 bg-base-100 shadow-xl border-2 border-base-200 flex flex-col gap-2"
+  style={description.length > 100 ? `grid-row: span ${Math.round(description.length / 200)};` : ''}
+>
   <div class="card-body">
     <h3 class="card-title">{title}</h3>
     <p class="text-gray-500">{description}</p>

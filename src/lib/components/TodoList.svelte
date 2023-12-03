@@ -24,7 +24,7 @@
     {/if}
   {/if}
 </div>
-<ul class="grid grid-cols-2 items-start auto-rows-auto gap-4 justify-center">
+<ul class="grid grid-cols-2 items-start gap-4 justify-center">
   {#each todos as { id, title, description, done }}
     <TodoItem {id} {title} {description} {done} />
   {/each}
